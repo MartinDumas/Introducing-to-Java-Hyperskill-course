@@ -10,28 +10,28 @@ public class Main {
              The lion looks healthy.
              """;
         System.out.println(output);
-        String camel = """
-                Switching on the camera in the camel habitat...
-                 ___.-''''-.
-                /___  @    |
-                ',,,,.     |         _.'''''''._
-                     '     |        /           \\
-                     |     \\    _.-'             \\
-                     |      '.-'                  '-.
-                     |                               ',
-                     |                                '',
-                      ',,-,                           ':;
-                           ',,| ;,,                 ,' ;;
-                              ! ; !'',,,',',,,,'!  ;   ;:
-                             : ;  ! !       ! ! ;  ;   :;
-                             ; ;   ! !      ! !  ; ;   ;,
-                            ; ;    ! !     ! !   ; ;
-                            ; ;    ! !    ! !     ; ;
-                           ;,,      !,!   !,!     ;,;
-                           /_I      L_I   L_I     /_I
-                Look at that! Our little camel is sunbathing!
-                """;
-        String lion = """
+       String camel = """
+            Switching on the camera in the camel habitat...
+             ___.-''''-.
+            /___  @    |
+            ',,,,.     |         _.'''''''._
+                 '     |        /           \\
+                 |     \\    _.-'             \\
+                 |      '.-'                  '-.
+                 |                               ',
+                 |                                '',
+                  ',,-,                           ':;
+                       ',,| ;,,                 ,' ;;
+                          ! ; !'',,,',',,,,'!  ;   ;:
+                         : ;  ! !       ! ! ;  ;   :;
+                         ; ;   ! !      ! !  ; ;   ;,
+                        ; ;    ! !     ! !   ; ;
+                        ; ;    ! !    ! !     ; ;
+                       ;,,      !,!   !,!     ;,;
+                       /_I      L_I   L_I     /_I
+            Look at that! Our little camel is sunbathing!""";
+
+       String lion = """
             Switching on the camera in the lion habitat...
                                                            ,w.
                                                          ,YWMMw  ,M  ,
@@ -48,7 +48,8 @@ public class Main {
                      /  Y,              `,  `-,=,_{   ;      MMMP`""-,  `-._.-,
                     (--, )                `,_ / `) \\/"")      ^"      `-, -;"\\:
             The lion is roaring!""";
-        String deer = """
+
+       String deer = """
             Switching on the camera in the deer habitat...
                /|       |\\
             `__\\       //__'
@@ -75,7 +76,24 @@ public class Main {
                        |_||_|           |_|   |_|
                       /_//_/           /_/   /_/
             Our 'Bambi' looks hungry. Let's go to feed it!""";
-        String bat = """
+
+       String goose = """
+            Switching on the camera in the goose habitat...
+            
+                                                _
+                                            ,-"" "".
+                                          ,'  ____  `.
+                                        ,'  ,'    `.  `._
+               (`.         _..--.._   ,'  ,'        \\    \\
+              (`-.\\    .-""        ""'   /          (  d _b
+             (`._  `-"" ,._             (            `-(   \\
+             <_  `     (  <`<            \\              `-._\\
+              <`-       (__< <           :
+               (__        (_<_<          ;
+                `------------------------------------------
+            The goose is staring intently at you... Maybe it's time to change the channel?""";
+
+       String bat = """
             Switching on the camera in the bat habitat...
             _________________               _________________
              ~-.              \\  |\\___/|  /              .-~
@@ -89,7 +107,8 @@ public class Main {
                             ~-. /  \\_/  \\ .-~
                                V         V
             This bat looks like it's doing fine.""";
-        String rabbit = """
+
+       String rabbit = """
             Switching on the camera in the rabbit habitat...
                      ,
                     /|      __
@@ -111,17 +130,14 @@ public class Main {
              ]\\      _\\    /"\\
             (" ~----( ~   Y.  )
             It looks like we will soon have more rabbits!""";
-        Scanner src = new Scanner(System.in);
-        String[] arrayOfAnimals = {camel, lion, deer, bat, rabbit};
-        System.out.println("Please enter the number of the habitat you would like to view:");
-        int a = src.nextInt();
-        System.out.println(arrayOfAnimals[a]);
-        String endResponse = """
-        ---
-        You've reached the end of the program. To check another habitat, please restart the watcher.
-            """;
-        System.out.println(endResponse);
 
-
+       String[] animals = {camel, lion, deer, goose, bat, rabbit};
+      Scanner src = new Scanner(System.in);
+       System.out.println("Please enter the number of the habitat you would like to view:");
+      while (src.hasNextInt()){
+         int a = src.nextInt();
+         System.out.println(animals[a]);
+      }
+       System.out.println("See you later!");
     }
 }
