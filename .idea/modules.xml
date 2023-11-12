@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/Cinema Room Manager/Cinema Room Manager.iml" filepath="$PROJECT_DIR$/Cinema Room Manager/Cinema Room Manager.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/Introducing-to-Java-Hyperskill-course.iml" filepath="$PROJECT_DIR$/.idea/Introducing-to-Java-Hyperskill-course.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Zookeeper/Zookeeper.iml" filepath="$PROJECT_DIR$/Zookeeper/Zookeeper.iml" />
+      <module fileurl="file://$PROJECT_DIR$/simpleBot/simpleBot.iml" filepath="$PROJECT_DIR$/simpleBot/simpleBot.iml" />
+    </modules>
+  </component>
+</project>
